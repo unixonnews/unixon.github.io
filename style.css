@@ -2,6 +2,8 @@ body {
 	margin: 0 auto;
 	background-color: #6056e9;
 	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
 }
 
 /*font-family: 'Roboto', sans-serif;*/
@@ -16,38 +18,24 @@ body {
 
 
 .logo {
-	margin: 55px 0 0 55px;
+	margin: 0px 0 0 25px;
 }
 
 .ads {
-	position: absolute;
-	top: 440px;
-	left: 40px;
 	width: 310px;
 	height: 500px;
+	margin-top: 50px;
 	background-color: lightcoral;
 }
 
 .right_part {
-	width: 889px;
+	width: 914px;
 	float: right;
-	margin: -400px 40px 100px 0;
+	margin: 0 -400px 100px 0;
 }
-.search_main_page {
-	float: right;
-	margin: 60px 60px 0 0;
-	width: 885px;
-	height: 44px;
-	outline: none;
-	text-indent: 15px;
-	font-size: 24px;
-	color: #4840c1;
-	border: none;
-	border-radius: 4px;
-	box-shadow: 0 0 20px 1px #4840c1;
-}
+
 .search {
-	margin: 60px 0 0 0;
+	margin: 20px 0 0 0;
 	width: 885px;
 	height: 44px;
 	outline: none;
@@ -69,12 +57,11 @@ body {
 /*NEWS NEWS NEWS NEWS*/
 
 .news_container {
-	float: right;	
+	margin: 30px 0 0 0;
 	width: 909px;
 	color: #fff;
 	display: flex;
 	flex-wrap: wrap;
-	margin: -230px 41px 0 0;
 }
 .news_block {
 	width: 278px;
@@ -115,14 +102,22 @@ body {
 
 
 /*MENU MENU MENU MENU*/
+.menu {
+	position: fixed;
+	width: 310px;	
+	text-align: center;
+	border-radius: 6px;
+	margin: 20px 0 0 -480px;
+}
+
 .userNamePhoto {
 	width: 310px;	
 	height: 78px;
 	background-color: #5d54e4;
 	box-shadow: 0 0 40px #4f47c3;
-	margin: 40px 0 0 40px;
 	display: flex;
 	align-items: center;
+	margin: 20px 0 20px 0;
 }
 .userNamePhoto img {
 	width: 64px;
@@ -177,17 +172,12 @@ body {
 
 
 
-.menu {
-	width: 310px;	
+.menu_list {
 	cursor: pointer;
-	margin: 30px 0 0 40px;
-	text-align: center;
 	background-color: #5d54e4;
 	box-shadow: 0 0 40px #4f47c3;
-	border-radius: 6px;
 }
-
-.menu_list {
+.menu_main {
 	width: 310px;
 	color: #fff;
 	font-size: 35px;
@@ -198,8 +188,21 @@ body {
 	background-repeat: no-repeat;
 	transition: .3s;
 }
-
-.menu_list:hover {
+.menu_vip {
+	width: 310px;
+	color: #fff;
+	font-size: 35px;
+	line-height: 60px;
+	background-size: 0% 100%;
+	background-position: right;
+	background-image: linear-gradient(#6a5fff, #6a5fff);
+	background-repeat: no-repeat;
+	transition: .3s;
+}
+.menu_main:hover {
+	background-size: 100% 100%;
+}
+.menu_vip:hover {
 	background-size: 100% 100%;
 }
 /*MENU MENU MENU MENU*/
@@ -216,7 +219,7 @@ body {
 	width: 889px;
 	background-color: #5d54e4;
 	box-shadow: 0 0 40px #4f47c3;
-	margin: 65px 0 0 0;
+	margin: 55px 0 0 0;
 	color: white;
 	overflow: hidden;
 }
