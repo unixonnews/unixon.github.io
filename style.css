@@ -359,7 +359,7 @@ body {
 }
 .user_comment_text {
 	width: 755px;
-	margin-left: 88px;
+	margin-left: 91px;
 	font-size: 24px;
 	color: #fff;
 	line-height: 1.1;
@@ -458,3 +458,79 @@ form input::placeholder {
 }
 
 /* LOGIN LOGIN LOGIN */
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
+	body {
+		display: block !important;
+	}
+
+	.menu {
+		display: none;
+		margin: 0;
+	}
+
+	.right_part {
+		width: 100vw;
+		margin: 0;
+	}
+
+	.search {
+		width: 94.5vw;
+		margin: 3vw 0 0 2vw;
+	}
+	.article_read_block{
+		margin: 5vw 0 0 2vw;
+		width: 95vw;
+	}
+
+	.read_also {
+		display: none;
+	}
+
+	.comments {
+		width: 96vw;
+		margin: 10vw 0 0 2vw;
+	}
+
+	.comment_write {
+		width: 86vw;
+		margin-left: 1.5vw;
+	}
+
+	.send_comment {
+		margin: 0 0 2vw 58vw;
+		width: 130px;
+		height: 40px;
+		font-size: 20px;
+	}
+
+	.user_comment_container {
+		width: 96vw;
+	}
+	
+	.user_comment {
+		width: 100vw;
+		margin: 6vw 0 0 0;
+		border-radius: 0;
+	}
+	.user_comment_text {
+		width: 70vw;
+		font-size: 20px;
+		line-height: 1;
+	}
+
+	.user_comment_date {
+		margin: 0 0 0 66vw;
+		padding: 1vw;
+		font-size: 12px;
+	}
+
+}
