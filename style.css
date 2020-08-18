@@ -219,7 +219,7 @@ body {
 	width: 889px;
 	background-color: #5d54e4;
 	box-shadow: 0 0 40px #4f47c3;
-	margin: 55px 0 0 0;
+	margin: 45px 0 0 0;
 	color: white;
 	overflow: hidden;
 }
@@ -354,23 +354,23 @@ body {
 	border-radius: 50%;
 }
 .user_comment_name {
-	font-size: 29px;
-	color: #d3d3d3;
+	font-size: 25px;
+	color: #fff;
+	padding-top: 8px;
 }
 .user_comment_text {
 	width: 755px;
 	margin-left: 91px;
 	font-size: 24px;
-	color: #fff;
+	color: #ededed;
 	line-height: 1.1;
 }
 .user_comment_date {
 	color: #b8b8b8;
 	opacity: 45%;
 	font-size: 14px;
-	margin: 5px 0 0 710px;
+	margin: 5px 0 0 740px;
 }
-
 
 
 
@@ -487,8 +487,19 @@ form input::placeholder {
 		margin: 3vw 0 0 2vw;
 	}
 	.article_read_block{
-		margin: 5vw 0 0 2vw;
+		margin: 5vw 0 0 2.4vw;
 		width: 95vw;
+	}
+	.article_title {
+		margin: 10px;
+		font-size: 8vw;
+	}
+	.article_text {
+		margin: 10px;
+	}
+
+	.views_icon {
+		width: 20px;
 	}
 
 	.read_also {
@@ -503,6 +514,9 @@ form input::placeholder {
 	.comment_write {
 		width: 86vw;
 		margin-left: 1.5vw;
+		margin-right: 0;
+		font-size: 5vw;
+		height: 4vw;
 	}
 
 	.send_comment {
@@ -521,14 +535,21 @@ form input::placeholder {
 		margin: 6vw 0 0 0;
 		border-radius: 0;
 	}
+
+	.user_comment_profile_image {
+		width: 32px;
+		margin: 2vw;
+	}
+
 	.user_comment_text {
-		width: 70vw;
-		font-size: 20px;
+		width: 80vw;
+		margin-left: 16vw;
+		font-size: 5vw;
 		line-height: 1;
 	}
 
 	.user_comment_date {
-		margin: 0 0 0 66vw;
+		margin: 0 0 0 62vw;
 		padding: 1vw;
 		font-size: 12px;
 	}
