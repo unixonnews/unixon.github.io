@@ -41,10 +41,11 @@ body {
 	outline: none;
 	text-indent: 15px;
 	font-size: 24px;
-	color: #4840c1;
+	color: #4d4d4d;
 	border: none;
 	border-radius: 4px;
 	box-shadow: 0 0 20px 1px #4840c1;
+	z-index: 120;
 }
 .search::placeholder {
 	opacity: 80%;
@@ -107,7 +108,7 @@ body {
 	width: 310px;	
 	text-align: center;
 	border-radius: 6px;
-	margin: 20px 0 0 -480px;
+	margin: 20px 0 0 -920px;
 }
 
 .userNamePhoto {
@@ -115,9 +116,10 @@ body {
 	height: 78px;
 	background-color: #5d54e4;
 	box-shadow: 0 0 40px #4f47c3;
+	margin: 20px 0 20px 0;
 	display: flex;
 	align-items: center;
-	margin: 20px 0 20px 0;
+	justify-content: center;
 }
 .userNamePhoto img {
 	width: 64px;
@@ -164,7 +166,6 @@ body {
 .login_open_bttn {
 	color: #fff;
 	font-size: 34px;
-	margin: 0 0 0 100px;
 	cursor: pointer;
 }
 
@@ -205,6 +206,10 @@ body {
 .menu_vip:hover {
 	background-size: 100% 100%;
 }
+
+#menu_open {display: none;}
+.menu_background {display: none;}
+.close_mobile_menu {display: none;}
 /*MENU MENU MENU MENU*/
 
 
@@ -254,13 +259,17 @@ body {
 
 /* READ ALSO */
 .read_also {
-	margin: 40px 0 0 10px;
+	margin: 40px 0 0 0;
 	font-size: 26px;
 	color: #e2e2e2;
 }
+.read_also_title {
+	margin: 0 0 0 10px;
+}
 
 .read_also_blocks {
-	margin: 20px 0 0 0;
+	width: 889px;
+	margin-top: 20px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -278,7 +287,7 @@ body {
 .read_also_block_title {
 	line-height: 1.1;
 	margin: 10px;
-	font-size: 36px;
+	font-size: 30px;
 	font-weight: bold;
 	color: #fff;
 }
@@ -297,6 +306,7 @@ body {
 /* COMMENTS */
 
 .comments {
+	width: 889px;
 	margin: 40px 0 0 0;
 	background-color: #5d54e4;
 }
@@ -369,7 +379,7 @@ body {
 	color: #b8b8b8;
 	opacity: 45%;
 	font-size: 14px;
-	margin: 5px 0 0 740px;
+	margin: 5px 0 0 720px;
 }
 
 
@@ -472,9 +482,70 @@ form input::placeholder {
 		display: block !important;
 	}
 
+	.logo {
+		margin: 25px 0 10px 0;
+	}
 	.menu {
+		width: 70vw;
+		height: 100vh;	
+		position: fixed;
+		top: 0;
+		left: 500px;
 		display: none;
 		margin: 0;
+		z-index: 99;
+		padding: 10px 0 10px 0;
+		background-color: #38348a;
+		border-radius: 0;
+		box-shadow: 0 0 40px #4f47c3;
+	}
+	.menu_background {
+		background-color: #000000;
+		opacity: .5;
+		position: fixed;
+		width: 30vw;
+		height: 100%;
+		top: 0;
+		left: 0;
+		z-index: -99;
+	}
+	.userNamePhoto {
+		box-shadow: none; 
+		width: 65vw;
+		margin: auto;
+		margin-bottom: 10px;
+		display: flex; align-items: center;
+	}
+
+	.login_open_bttn {margin: 0 auto;}
+
+	.menu_list {box-shadow: none; width: 65vw; margin: auto;}
+	.menu_list div {width: inherit;}
+
+	#menu_open {display: inline;}
+	.fa-bars {
+		border: none;
+		background: none;
+		font-size: 50px;
+		color: #ffffff;
+		position: relative;
+		top: 2.5vw;
+		left: 3vw;
+		opacity: 1;
+	}
+
+	.close_mobile_menu {
+		background: none;
+		border: none;
+		color: #ffffff;
+		font-size: 30px;
+		position: fixed;
+		top: 4vw;
+		left: 4vw;
+	}
+
+	.ads {
+		display: none;
 	}
 
 	.right_part {
@@ -483,19 +554,20 @@ form input::placeholder {
 	}
 
 	.search {
-		width: 94.5vw;
-		margin: 3vw 0 0 2vw;
+		width: 80vw;
+		margin: 2vw 0 0 2vw;
 	}
 	.article_read_block{
 		margin: 5vw 0 0 2.4vw;
 		width: 95vw;
 	}
 	.article_title {
-		margin: 10px;
-		font-size: 8vw;
+		margin: 5px;
+		font-size: 7vw;
 	}
 	.article_text {
-		margin: 10px;
+		margin: 5px;
+		font-size: 16px;
 	}
 
 	.views_icon {
@@ -537,21 +609,65 @@ form input::placeholder {
 	}
 
 	.user_comment_profile_image {
-		width: 32px;
+		width: 42px;
 		margin: 2vw;
 	}
 
 	.user_comment_text {
 		width: 80vw;
-		margin-left: 16vw;
-		font-size: 5vw;
-		line-height: 1;
+		margin: 0;
+		margin-left: 15.1vw;
+		font-size: 4.5vw;
+		line-height: 1.1;
 	}
 
 	.user_comment_date {
 		margin: 0 0 0 62vw;
 		padding: 1vw;
 		font-size: 12px;
+	}
+
+
+
+
+
+	/* INDEX INDEX INDEX */
+
+	.news_container {
+		width: 100vw;
+		margin: 30px 0 0 0;
+		color: #fff;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.news_block {
+		width: 94vw;
+		height: auto;
+		background-color: #5046d5;
+		box-shadow: 0 0 20px #4941bc;
+		margin: 0 0 30px 3vw;
+		cursor: pointer;
+		transition: .3s;
+	}
+	.news_block:hover {
+		margin-top: -2px;
+	}
+	.news_title {
+		margin: 2vw;
+		font-weight: 700;
+		font-size: 36px;
+	}
+		 
+	.news_text {
+		margin: 2vw 3vw 3vw 3vw;
+		width: auto;
+	}
+	.news_more_text {
+		color: #b6b6b6;
+		cursor: pointer;
+	}
+	.news_more_text:hover {
+		color: grey;
 	}
 
 }
